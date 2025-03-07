@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_application_1/res/app_colors.dart';
-
+import 'package:flutter_application_1/screens/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
         // Utilisation de la couleur bleue définie dans AppColors comme couleur principale
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.blue),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const HomePage(), // Utilisation de HomePage au lieu de MyHomePage
     );
   }
 }
